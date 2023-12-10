@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Gotham_Medium;
+    src: url(../fonts/Gotham_Medium.otf);
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Gotham_Medium';
+}
+
+/* Navbar */
+header {
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #eae8e6;
+}
+
+header > * {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #2da3da;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header > a > img {
+    width: 8rem;
+    margin-right: auto;
+}
+
+.buscar { 
+    width: 1.3rem;
+}
+
+/* Datos de la Empresa */
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.datos > div {
+    background-color: #008fd2;
+    color: white;
+    padding: 2.4rem 6rem;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 16rem;
+}
+
+.datos-img {
+    width: 70px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Nosotros */
+.nosotros {
+    padding: 5rem 0;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.nosotros-info {
+    width: 40rem;
+    margin-right: auto;
+}
+
+.nosotros-info > h2 {
+    font-size: 48px;
+}
+
+.nosotros-info > button {
+    background-color: #46b4b8;
+    padding: 1rem 6rem;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+/* Cadenas y Distribuidores */
+.cadenas {
+    padding: 5rem 0;
+}
+
+.cadenas > * {
+text-align: center;
+}
+
+.carrusel {
+    display: flex;
+    margin: 4rem 0;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.carrusel > img {
+    max-width: 100%;
+}
+
+/* Productos */
+.seccion-productos {
+    background-color: #0f9ad2;
+    padding: 5rem 0;
+}
+
+.productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.productos-img {
+    margin-right: auto;
+}
+
+.productos-info {
+    width: 50%;
+    color: white;
+}
+
+.productos-info > button {
+    background-color: white;
+    color: #008fd2;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Certificaciones y aprobaciones */
+.certi {
+    padding: 5rem 0;
+}
+
+.certi > * {
+text-align: center;
+}
+
+.certi-carrusel {
+    display: flex;
+    margin: 6rem 0;
+    gap: 18rem;
+    justify-content: center;
+}
+
+.certi-carrusel > img {
+    max-width: 100%;
+}
+
+/* A tener en cuenta */
+.recomendaciones {
+    padding: 5rem 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.recomendaciones-info {
+    text-align: center;
+}
+
+.recomendaciones > div > h2 {
+    color: #0f9ad2;
+    font-size: 24px;
+}
+
+.puntos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    width: 45%;
+}
+
+/* Footer */
+footer {
+    background-color: #1a99ce;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > hr {
+    width: 70%;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto 2rem auto;
+    gap: 10rem;
+    padding-top: 4rem;
+}
+
+.footer-company {
+    width: 25rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.copyright {
+    margin-right: auto;
+}
