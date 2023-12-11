@@ -1,11 +1,25 @@
 @font-face {
-    font-family: Gotham_Medium;
-    src: url(../fonts/Gotham_Medium.otf);
+    font-family: Gotham-Light;
+    src: url(../fonts/Gotham-Font/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/Gotham-Font/GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/Gotham-Font/GothamBold.ttf);
 }
 
 body {
     margin: 0 auto;
-    font-family: 'Gotham_Medium';
+    font-family: 'Gotham-Light';
+}
+
+strong {
+    font-family: 'GothamMedium';
 }
 
 /* Navbar */
@@ -13,7 +27,7 @@ header {
     display: flex;
     padding: 20px 0;
     width: 100%;
-    background-color: #eae8e6;
+    background-color: #fefefe;
 }
 
 header > * {
@@ -32,9 +46,9 @@ header > * {
 
 .links > a {
     text-decoration: none;
-    color: #2da3da;
-    font-weight: bold;
-    font-size: 14px;
+    color: #0090d2;
+    font-family: 'GothamMedium';
+    font-size: 16px;
 }
 
 header > a > img {
@@ -55,15 +69,23 @@ header > a > img {
     padding: 5rem 0;
 }
 .datos > div {
-    background-color: #008fd2;
+    background: rgb(54,181,210);
+    background: -moz-linear-gradient(180deg, rgba(54,181,210,1) 0%, rgba(0,143,210,1) 40%);
+    background: -webkit-linear-gradient(180deg, rgba(54,181,210,1) 0%, rgba(0,143,210,1) 40%);
+    background: linear-gradient(180deg, rgba(54,181,210,1) 0%, rgba(0,143,210,1) 40%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#36b5d2",endColorstr="#008fd2",GradientType=1);
     color: white;
-    padding: 2.4rem 6rem;
+    padding: 50px 80px;
     text-align: center;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    max-width: 16rem;
+    gap: 5px;
+    width: 15%;
+}
+
+.datos > div > div > p {
+    line-height: 20px;
 }
 
 .datos-img {
@@ -87,42 +109,71 @@ header > a > img {
 }
 
 .nosotros-info > h2 {
-    font-size: 48px;
+    font-size: 40px;
+    font-family: 'GothamMedium';
 }
 
-.nosotros-info > button {
-    background-color: #46b4b8;
-    padding: 1rem 6rem;
+.nosotros-info > p {
+    line-height: 20px;
+    color: #2e2e2e;
+}
+
+.btn-green-gradient {
+    background: rgb(95,198,216);
+    background: -moz-linear-gradient(180deg, rgba(95,198,216,1) 0%, rgba(45,162,154,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(95,198,216,1) 0%, rgba(45,162,154,1) 100%);
+    background: linear-gradient(180deg, rgba(95,198,216,1) 0%, rgba(45,162,154,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fc6d8",endColorstr="#2da29a",GradientType=1);
+    padding: 12px 80px;
     border: none;
     border-radius: 25px;
     color: white;
     font-weight: bold;
     margin-top: 2rem;
+    font-size: 16px;
 }
 
 /* Cadenas y Distribuidores */
-.cadenas {
-    padding: 5rem 0;
-}
-
 .cadenas > * {
 text-align: center;
 }
 
-.carrusel {
+.cadenas-texto {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.cadenas-texto > h2 {
+    font-size: 40px;
+    font-family: 'GothamMedium';
+    color: #2e2e2e;
+}
+
+.cadenas-texto > p {
+    line-height: 19px;
+}
+
+.cadenas-carrusel {
     display: flex;
     margin: 4rem 0;
     gap: 4rem;
     justify-content: center;
+    align-items: center;
 }
 
-.carrusel > img {
-    max-width: 100%;
+.cadenas-carrusel > img {
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Productos */
 .seccion-productos {
-    background-color: #0f9ad2;
+    background: rgb(2,146,209);
+    background: -moz-linear-gradient(180deg, rgba(2,146,209,1) 0%, rgba(54,181,210,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,146,209,1) 0%, rgba(54,181,210,1) 100%);
+    background: linear-gradient(180deg, rgba(2,146,209,1) 0%, rgba(54,181,210,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0292d1",endColorstr="#36b5d2",GradientType=1);
     padding: 5rem 0;
 }
 
@@ -141,6 +192,15 @@ text-align: center;
 .productos-info {
     width: 50%;
     color: white;
+}
+
+.productos-info > h2 {
+    font-size: 40px;
+    font-family: 'GothamMedium';
+}
+
+.productos-info > p {
+    line-height: 20px;
 }
 
 .productos-info > button {
@@ -177,16 +237,49 @@ text-align: center;
 .recomendaciones {
     padding: 5rem 0;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
-.recomendaciones-info {
-    text-align: center;
-}
-
-.recomendaciones > div > h2 {
+.recomendaciones-info > h2 {
     color: #0f9ad2;
-    font-size: 24px;
+    font-size: 55px;
+}
+
+.recomendaciones-info > h2 > strong {
+    font-size: 65px;
+}
+
+.recomendaciones-info > p {
+    font-family: 'GothamMedium';
+    color: #2e2e2e;
+}
+
+.tip {
+    display: flex;
+    gap: 25px;
+}
+
+.tip-number {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    align-center: center;
+    border-radius: 7px;
+    background: rgb(48,164,218);
+    background: -moz-linear-gradient(0deg, rgba(48,164,218,1) 0%, rgba(32,156,172,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(48,164,218,1) 0%, rgba(32,156,172,1) 100%);
+    background: linear-gradient(0deg, rgba(48,164,218,1) 0%, rgba(32,156,172,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#30a4da",endColorstr="#209cac",GradientType=1);
+    color: white;
+    font-size: 30px;
+    font-family: 'GothamBold';
+}
+
+.tip-description {
+    width: 80%;
+    line-height: 20px;
+    align-items: start;
+    vertical-align: start;
 }
 
 .puntos {
@@ -202,6 +295,7 @@ text-align: center;
 
 /* Footer */
 footer {
+    background-image: url(https://bonapharm.com/wp-content/uploads/2022/04/img-footer.jpg);
     background-color: #1a99ce;
     color: white;
     display: flex;
@@ -209,13 +303,15 @@ footer {
 }
 
 footer > hr {
-    width: 70%;
+    width: 99%;
+    margin: 0 auto;
+    color: #72c0e4;
 }
 
 .footer-main {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     margin: 0 auto 2rem auto;
     gap: 10rem;
     padding-top: 4rem;
@@ -225,14 +321,31 @@ footer > hr {
     width: 25rem;
 }
 
+.footer-company > p {
+    font-size: 12px;
+    color: #e1f1f8;
+    line-height: 16px;
+}
+
+.linkedin {
+    width: 25px;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.menu > a {
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-links > a {
     text-decoration: none;
+    text-align: center;
     color: white;
 }
 
