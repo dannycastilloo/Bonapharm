@@ -1,0 +1,46 @@
+/* Banner */
+.nosotros-banner > img {
+    width: 99.9%;
+}
+
+/* Historia */
+.historia {
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.historia-img {
+    margin-right: auto;
+}
+
+.historia-txt {
+    width: 90%;
+    line-height: 25px;
+}
+
+/* Misión, Visión, etc */
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5rem auto;
+    justify-content: center;
+}
+
+.valores-row-item {
+    width: 40%;
+}
+
+/* Equipo */
+.miembros {
+    display: flex;
+    list-style: none;
+    margin: 5rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.miembros > li {
+    display: flex;
+}

@@ -68,6 +68,7 @@ header > a > img {
     justify-content: center;
     padding: 5rem 0;
 }
+
 .datos > div {
     background: rgb(54,181,210);
     background: -moz-linear-gradient(180deg, rgba(54,181,210,1) 0%, rgba(0,143,210,1) 40%);
@@ -263,7 +264,7 @@ text-align: center;
     width: 46px;
     height: 46px;
     text-align: center;
-    align-center: center;
+    line-height: 46px;
     border-radius: 7px;
     background: rgb(48,164,218);
     background: -moz-linear-gradient(0deg, rgba(48,164,218,1) 0%, rgba(32,156,172,1) 100%);
@@ -306,6 +307,10 @@ footer > hr {
     width: 99%;
     margin: 0 auto;
     color: #72c0e4;
+}
+
+.footer-sub {
+    text-decoration: underline;
 }
 
 .footer-main {
@@ -352,10 +357,21 @@ footer > hr {
 .footer-end {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .copyright {
     margin-right: auto;
+    font-size: 13px;
+}
+
+.terminos {
+    font-size: 13px;
+}
+
+.terminos > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
