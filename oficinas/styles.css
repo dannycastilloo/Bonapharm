@@ -3,4 +3,24 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 700px;
+}
+
+.nuestras-oficinas > h2 {
+    text-align: center;
+}
+
+.oficinas-bonapharm {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.oficinas-card {
+    display: flex;
+    margin: 5rem 0;
+}
+
+.oficinas-txt {
+    width: 40%;
+    margin: auto;
 }

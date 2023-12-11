@@ -25,9 +25,12 @@ strong {
 /* Navbar */
 header {
     display: flex;
-    padding: 20px 0;
+    padding: 18px 0;
     width: 100%;
-    background-color: #fefefe;
+    background-color: rgba(254, 254, 254, 0.7);
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header > * {
@@ -48,7 +51,7 @@ header > * {
     text-decoration: none;
     color: #0090d2;
     font-family: 'GothamMedium';
-    font-size: 16px;
+    font-size: 15px;
 }
 
 header > a > img {
@@ -154,20 +157,6 @@ text-align: center;
     line-height: 19px;
 }
 
-.cadenas-carrusel {
-    display: flex;
-    margin: 4rem 0;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.cadenas-carrusel > img {
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Productos */
 .seccion-productos {
     background: rgb(2,146,209);
@@ -223,27 +212,17 @@ text-align: center;
 text-align: center;
 }
 
-.certi-carrusel {
-    display: flex;
-    margin: 6rem 0;
-    gap: 18rem;
-    justify-content: center;
-}
-
-.certi-carrusel > img {
-    max-width: 100%;
-}
-
 /* A tener en cuenta */
 .recomendaciones {
-    padding: 5rem 0;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0 auto 8rem auto;
     width: 90%;
 }
 
 .recomendaciones-info > h2 {
     color: #0f9ad2;
     font-size: 55px;
+    text-align: center;
 }
 
 .recomendaciones-info > h2 > strong {
@@ -253,6 +232,7 @@ text-align: center;
 .recomendaciones-info > p {
     font-family: 'GothamMedium';
     color: #2e2e2e;
+    text-align: center;
 }
 
 .tip {
@@ -306,7 +286,8 @@ footer {
 footer > hr {
     width: 99%;
     margin: 0 auto;
-    color: #72c0e4;
+    color: rgba(255, 255, 255, 0.4);
+    border-width: 1px;
 }
 
 .footer-sub {
@@ -317,8 +298,8 @@ footer > hr {
     display: flex;
     justify-content: center;
     width: 80%;
-    margin: 0 auto 2rem auto;
-    gap: 10rem;
+    margin: 10px auto 2.5rem auto;
+    gap: 155px;
     padding-top: 4rem;
 }
 
@@ -354,6 +335,11 @@ footer > hr {
     color: white;
 }
 
+.ingresar-aqui {
+    color: white;
+    font-weight: bold;
+}
+
 .footer-end {
     display: flex;
     justify-content: center;
@@ -368,10 +354,4 @@ footer > hr {
 
 .terminos {
     font-size: 13px;
-}
-
-.terminos > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
 }

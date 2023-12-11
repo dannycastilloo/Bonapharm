@@ -1,0 +1,104 @@
+.wrapper {
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: rgb(57,183,210);
+  background: -moz-linear-gradient(180deg, rgba(57,183,210,1) 0%, rgba(37,154,209,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(57,183,210,1) 0%, rgba(37,154,209,1) 100%);
+  background: linear-gradient(180deg, rgba(57,183,210,1) 0%, rgba(37,154,209,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#39b7d2",endColorstr="#259ad1",GradientType=1);
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  color: white;
+}
+
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child{
+  left: -22px;
+}
+
+.wrapper i:last-child{
+  right: -22px;
+}
+
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.carousel .card .img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}

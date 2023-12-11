@@ -10,13 +10,14 @@
     margin: 5rem auto;
 }
 
-.historia-img {
-    margin-right: auto;
+.historia-txt {
+    width: 100%;
+    line-height: 25px;
 }
 
-.historia-txt {
-    width: 90%;
-    line-height: 25px;
+.historia-txt > h2 {
+    font-family: 'GothamMedium';
+    font-size: 40px;
 }
 
 /* Misión, Visión, etc */
@@ -24,23 +25,27 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 5rem auto;
+    margin: 0 auto;
     justify-content: center;
+    gap: 8rem;
+    padding: 3rem 0;
 }
 
 .valores-row-item {
-    width: 40%;
+    width: 35%;
 }
 
 /* Equipo */
-.miembros {
-    display: flex;
-    list-style: none;
-    margin: 5rem auto;
-    justify-content: center;
-    align-items: center;
+.equipo {
+    padding: 5rem 0;
 }
 
-.miembros > li {
+.miembro-img > img {
+    width: 300px;
+    height: 300px;
+}
+
+.miembro-card {
     display: flex;
+    flex-direction: row;
 }

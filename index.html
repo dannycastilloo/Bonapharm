@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonapharm</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/banner.css">
     <link rel="icon" href="https://bonapharm.com/wp-content/uploads/2023/02/cropped-FAVICON_bonapharm-1-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <a href="https://bonapharm.com">
+        <a href="./index.html">
             <img src="https://bonapharm.com/wp-content/uploads/2023/02/cropped-logo-bonapharm_web-1.png" alt="">
         </a>
         <div class="links">
@@ -30,27 +33,40 @@
             </div>
         </div>
     </header>
-    <!--
+
     <section>
-        <div>
-            <img src="https://bonapharm.com/wp-content/uploads/2023/01/3.jpg" alt="">
-            <h2>UNA GRAN FAMILIA DE
-                PRODUCTOS CON CALIDAD
-                COMPROBADA.</h2>
-            <button class="btn-green-gradient">Conócenos</button>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h2></h2>
-            <button class="btn-green-gradient"></button>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h2></h2>
-            <button class="btn-green-gradient"></button>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="../img/img/b_2.jpg" alt="">
+                    <h2>UNA GRAN FAMILIA DE<br>
+                        PRODUCTOS CON CALIDAD<br>
+                        COMPROBADA.</h2>
+                    <button class="btn-green-gradient">Conócenos</button>
+                </div>
+                <div class="item">
+                    <img src="../img/img/b_3.jpg" alt="">
+                    <h2>PARA EFECTOS ADVERSOS<br><strong>INGRESA AQUÍ.</strong>
+                    </h2>
+                    <button class="btn-green-gradient">Farmacovigilancia</button>
+                </div>
+                <div class="item">
+                    <img src="../img/img/b_1.jpg" alt="">
+                    <h2>CONOCE NUESTRAS<br><strong>NUEVAS OFICINAS.</strong></h2>
+            <button class="btn-green-gradient">Oficinas Bonapharm</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </section>
--->
 
     <section class="datos">
         <div>
@@ -101,12 +117,26 @@
                 internacionales.
             </p>
         </div>
-        <div class="cadenas-carrusel">
-            <img src="https://bonapharm.com/wp-content/uploads/2022/04/logo-inkafarma.png" alt="">
-            <img src="https://bonapharm.com/wp-content/uploads/2023/02/CADENAS_BOTICAPERU.png" alt="">
-            <img src="https://bonapharm.com/wp-content/uploads/2022/04/logo-mifarma.png" alt="">
-            <img src="https://bonapharm.com/wp-content/uploads/2022/11/logo-qs.png" alt="">
-            <img src="https://bonapharm.com/wp-content/uploads/2023/02/CADENAS_BOTICAS-Y-SALUD.png" alt="">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="./img/logos/inkafarma.png" alt="img">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/boticas_peru.png" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/mifarma.png" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/quimica_suiza.png" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/boticas_salud.png" alt="img" draggable="false"></div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </section>
 
@@ -132,10 +162,23 @@
         <h2>Certificaciones y aprobaciones</h2>
         <p>Estamos avalados por las principales entidades a nivel mundial que garantizan nuestra alta calidad de
             productos.</p>
-        <div class="certi-carrusel">
-            <img src="https://bonapharm.com/wp-content/uploads/2022/04/tga.png" alt="">
-            <img src="https://bonapharm.com/wp-content/uploads/2022/04/fda.png" alt="">
-            <img src="https://bonapharm.com/wp-content/uploads/2022/04/gmp.png" alt="">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="./img/logos/fda.png" alt="img">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/tga.png" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/gmp.png" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/logos/digemid.png" alt="img" draggable="false"></div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </section>
 
@@ -250,17 +293,18 @@
                     Santiago de Surco - Lima - Perú</p>
 
                 <p><strong>Teléfono: </strong>(511) 250-9043</p>
-                <p>En caso de efectos adversos <a href="">Ingresar aquí</a></p>
+                <p>En caso de efectos adversos <a class="ingresar-aqui" href="">Ingresar aquí</a></p>
             </div>
         </div>
         <hr>
         <div class="footer-end">
             <p class="copyright">&copy; Bonapharm All Rights Reserved</p>
-            <p class="terminos">Conoce nuestros <a href="">términos y condiciones</a> de uso de datos</p>
+            <p class="terminos">Conoce nuestros <strong>términos y condiciones</strong> de uso de datos</p>
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,7 @@
+.productos-banner {
+    background-image: url('../img/img/b_productos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}

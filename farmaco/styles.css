@@ -1,0 +1,8 @@
+.farmaco {
+    padding: 5rem auto;
+}
+
+.farmaco > h2 {
+    text-align: center;
+    font-family: 'GothamMedium';
+}

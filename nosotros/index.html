@@ -5,13 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title>Document</title>
+    <title>Nosotros - Bonapharm</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../css/slider.css">
     <link rel="icon" href="https://bonapharm.com/wp-content/uploads/2023/02/cropped-FAVICON_bonapharm-1-32x32.png">
 </head>
 
 <body>
+    <header>
+        <a href="../index.html">
+            <img src="https://bonapharm.com/wp-content/uploads/2023/02/cropped-logo-bonapharm_web-1.png" alt="">
+        </a>
+        <div class="links">
+            <a href="../index.html">Home</a>
+            <a href="">Nosotros</a>
+            <a href="../oficinas/index.html">Nuestras Oficinas</a>
+            <a href="../productos/index.html">Productos</a>
+            <a href="../farmaco/index.html">Farmacovigilancia</a>
+            <a href="../blog/index.html">Blog</a>
+            <a href="../contacto/index.html">Contacto</a>
+            <div>
+                <img src="https://bonapharm.com/wp-content/uploads/2022/12/peru.png" alt="">
+            </div>
+            <div class="buscar">
+                <img src="https://bonapharm.com/wp-content/themes/bonapharm-codelar/image/search.svg" alt="Buscar">
+            </div>
+        </div>
+    </header>
     <section class="nosotros-banner">
         <img src="../img/img/b_nosotros.jpg" alt="Nosotros">
         <h2>NUESTROS INICIOS <br>Y NUESTRO PRESENTE</h2>
@@ -106,76 +127,145 @@
     </section>
 
     <section class="equipo">
-        <ul class="miembros">
-            <li>
-                <img src="../img/img/fundador_1.png" alt="">
-                <h4>Luis Salverredy</h4>
-                <h5>CEO</h5>
-                <p>“Nuestro compromiso es ser solidarios y ayudar a la salud de las personas a través de productos
-                    de
-                    excelente
-                    calidad a precios asequibles. De esta forma, hemos generado un modelo de negocio que es un
-                    círculo
-                    virtuoso
-                    donde todos nos beneficiamos: consumidores, cadena de distribución y nosotros.”</p>
-            </li>
-            <li>
-                <img src="../img/img/fundador_2.png" alt="">
-
-
-                <h4>Roberto Martinez</h4>
-                <h5>Gerente Regional de <br>Administración y Finanzas</h5>
-                <p>“Una de las principales virtudes de Bonapharm radica en las oportunidades de crecimiento que
-                    ofrece a sus
-                    colaboradores. En trece años trabajando en la compañía he podido ver el equilibrio entre su
-                    expansión y
-                    el
-                    desarrollo personal de cada miembro del equipo, incluyéndome. Desde que ingresé en el 2009, como
-                    Analista de
-                    Contabilidad; hasta hoy, como Gerente Regional de Administración y Finanzas, puedo decir que
-                    estoy en el
-                    lugar donde siempre quise estar.”</p>
-            </li>
-            <li>
-                <h4>Mercy Aldave</h4>
-                <h5>Jefa de Asuntos Regulatorios</h5>
-                <p>“Ingresé a Bonapharm el año 2011, como Analista de Asuntos Regulatorios Junior. Después de 11
-                    años, me
-                    siento
-                    orgullosa de pertenecer a una empresa que demuestra un sincero interés y dedicación para
-                    adaptarse y
-                    alinearse a los continuos cambios en la normativa establecida por la Agencia Nacional de
-                    Medicamentos y
-                    a
-                    las guías internacionales.”</p>
-            </li>
-            <li>
-                <h4>Jerzy Salverredy</h4>
-                <h5>Director Comercial</h5>
-                <p>“Liderar la estrategia comercial de Bonapharm es un trabajo gratificante. En un mercado tan
-                    competitivo,
-                    es
-                    satisfactorio contar con productos y precios que rompen los esquemas y ofrecen características
-                    únicas
-                    que
-                    pueden ser explotadas por nuestro equipo de ventas.”</p>
-            </li>
-            <li>
-                <h4>Joshua Salverredy</h4>
-                <h5>Gerente de Finanzas e Inversiones</h5>
-                <p>“El principal desafío en una empresa familiar es mantener los vínculos afectivos sin perder el
-                    enfoque
-                    competitivo y adaptativo hacia el mercado. Bonapharm me brinda la oportunidad de desarrollarme
-                    profesionalmente y generar lazos con los excepcionales talentos que forman parte de la
-                    compañía.”</p>
-            </li>
-        </ul>
-
-        <div>
-            <button></button>
-            <button></button>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card miembro-card">
+                    <div class="img miembro-img">
+                        <img src="../img/img/fundador_1.png" alt="img">
+                    </div>
+                    <div>
+                        <h4>Luis Salverredy</h4>
+                        <h5>CEO</h5>
+                        <p>“Nuestro compromiso es ser solidarios y ayudar a la salud de las personas a través de
+                            productos
+                            de
+                            excelente
+                            calidad a precios asequibles. De esta forma, hemos generado un modelo de negocio que es un
+                            círculo
+                            virtuoso
+                            donde todos nos beneficiamos: consumidores, cadena de distribución y nosotros.”</p>
+                    </div>
+                </li>
+                <li class="card miembro-card">
+                    <div class="img miembro-img">
+                        <img src="../img/img/fundador_2.png" alt="img" draggable="false">
+                    </div>
+                    <div>
+                        <h4>Roberto Martinez</h4>
+                        <h5>Gerente Regional de <br>Administración y Finanzas</h5>
+                        <p>“Una de las principales virtudes de Bonapharm radica en las oportunidades de crecimiento que
+                            ofrece a sus
+                            colaboradores. En trece años trabajando en la compañía he podido ver el equilibrio entre su
+                            expansión y
+                            el
+                            desarrollo personal de cada miembro del equipo, incluyéndome. Desde que ingresé en el 2009,
+                            como
+                            Analista de
+                            Contabilidad; hasta hoy, como Gerente Regional de Administración y Finanzas, puedo decir que
+                            estoy en el
+                            lugar donde siempre quise estar.”</p>
+                    </div>
+                </li>
+                <li class="card miembro-card">
+                    <div class="img miembro-img">
+                        <img src="" alt="img" draggable="false">
+                    </div>
+                    <div>
+                        <h4>Mercy Aldave</h4>
+                        <h5>Jefa de Asuntos Regulatorios</h5>
+                        <p>“Ingresé a Bonapharm el año 2011, como Analista de Asuntos Regulatorios Junior. Después de 11
+                            años, me
+                            siento
+                            orgullosa de pertenecer a una empresa que demuestra un sincero interés y dedicación para
+                            adaptarse y
+                            alinearse a los continuos cambios en la normativa establecida por la Agencia Nacional de
+                            Medicamentos y
+                            a
+                            las guías internacionales.”</p>
+                    </div>
+                </li>
+                <li class="card miembro-card">
+                    <div class="img miembro-img">
+                        <img src="" alt="img" draggable="false">
+                    </div>
+                    <div>
+                        <h4>Jerzy Salverredy</h4>
+                        <h5>Director Comercial</h5>
+                        <p>“Liderar la estrategia comercial de Bonapharm es un trabajo gratificante. En un mercado tan
+                            competitivo,
+                            es
+                            satisfactorio contar con productos y precios que rompen los esquemas y ofrecen
+                            características
+                            únicas
+                            que
+                            pueden ser explotadas por nuestro equipo de ventas.”</p>
+                    </div>
+                </li>
+                <li class="card miembro-card">
+                    <div class="img miembro-img">
+                        <img src="" alt="img" draggable="false">
+                    </div>
+                    <div>
+                        <h4>Joshua Salverredy</h4>
+                        <h5>Gerente de Finanzas e Inversiones</h5>
+                        <p>“El principal desafío en una empresa familiar es mantener los vínculos afectivos sin perder
+                            el
+                            enfoque
+                            competitivo y adaptativo hacia el mercado. Bonapharm me brinda la oportunidad de
+                            desarrollarme
+                            profesionalmente y generar lazos con los excepcionales talentos que forman parte de la
+                            compañía.”</p>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-company">
+                <img src="https://bonapharm.com/wp-content/uploads/2022/04/logo-footer-bonapharm.png" alt="">
+                <p><strong>Bonapharm</strong> es una empresa peruana con presencia en Ecuador y Bolivia.
+                    <strong>Cuenta
+                        con más de 100 moléculas
+                        de productos farmacéuticos y OTC</strong> que se posicionan como unos de los más vendidos en
+                    el
+                    mercado.
+                </p>
+                <img class="linkedin" src="https://bonapharm.com/wp-content/uploads/2023/01/logo-linkedin.svg" alt="">
+            </div>
+            <hr>
+            <div class="menu">
+                <h3 class="footer-sub">MENÚ</h3>
+                <div class="menu-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./nosotros/index.html">Nosotros</a>
+                    <a href="./oficinas/index.html">Nuestras Oficinas</a>
+                    <a href="./productos/index.html">Productos</a>
+                    <a href="./farmaco/index.html">Farmacovigilancia</a>
+                    <a href="./blog/index.html">Blog</a>
+                    <a href="./contacto/index.html">Contacto</a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3 class="footer-sub">CONTACTO</h3>
+                <p><strong>Dirección: </strong>Av. Del Pinar 180 - Of. 701
+                    Santiago de Surco - Lima - Perú</p>
+
+                <p><strong>Teléfono: </strong>(511) 250-9043</p>
+                <p>En caso de efectos adversos <a class="ingresar-aqui" href="">Ingresar aquí</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-end">
+            <p class="copyright">&copy; Bonapharm All Rights Reserved</p>
+            <p class="terminos">Conoce nuestros <strong>términos y condiciones</strong> de uso de datos</p>
+        </div>
+    </footer>
+    <script src="../js/slider.js"></script>
 </body>
 
 </html>
