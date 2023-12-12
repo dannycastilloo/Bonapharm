@@ -1,0 +1,116 @@
+.contacto-banner {
+    background-image: url('../img/img/b_contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 475px;
+}
+
+.contacto-banner>strong {
+    top: 26%;
+    left: 80%;
+    position: absolute;
+    text-align: end;
+    font-size: 30px;
+    color: #2E2E2E;
+    line-height: 35px;
+}
+
+.seccion-contacto {
+    display: flex;
+    margin: 5rem auto;
+    justify-content: center;
+    height: 800px;
+}
+
+.contacto-info {
+    background: rgb(45, 162, 155);
+    background: -moz-linear-gradient(180deg, rgba(45, 162, 155, 1) 0%, rgba(1, 144, 209, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(45, 162, 155, 1) 0%, rgba(1, 144, 209, 1) 100%);
+    background: linear-gradient(180deg, rgba(45, 162, 155, 1) 0%, rgba(1, 144, 209, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2da29b", endColorstr="#0190d1", GradientType=1);
+    padding: 80px 370px 60px 60px;
+    border-radius: 20px 0 0 20px;
+    color: white;
+    height: 350px;
+    margin: auto 0;
+}
+
+.contactanos > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 36px;
+    font-family: 'GothamMedium';
+}
+
+.contactanos-info {
+    font-size: 14px;
+}
+
+.contactanos-info > h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-family: 'GothamMedium';
+}
+
+.contactanos-info > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactanos-info > div > img {
+    width: 32px;
+    height: 32px
+}
+
+.ingresar {
+    color: white;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 35px;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 650px;
+    border-radius: 20px;
+}
+
+.contacto-form input, .contacto-form textarea {
+    padding: 6px 12px;
+    color: #6a6a6a;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    font-family: 'Gotham-Light';
+}
+.contacto-form input::placeholder, .contacto-form textarea::placeholder {
+    color: #c2c2c2;
+    font-family: 'Gotham-Light';
+}
+
+.contacto-flex > input {
+    width: 45%;
+}
+
+.contacto-flex > input:first-child {
+    margin-right: 10px;
+}
+
+.contacto-form > button {
+    width: 36%;
+    margin: 20px auto 0 auto;
+    background-color: #59b7e2;
+    color: white;
+    font-family: 'GothamMedium';
+    padding: 17px 0;
+    border-radius: 15px;
+    border: none;
+    font-size: 24px;
+}

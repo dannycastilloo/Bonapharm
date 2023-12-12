@@ -1,8 +1,171 @@
+.farmaco-banner {
+    background-image: url('../img/img/b_farmacovigilancia.jpg');
+    height: 480px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.farmaco-banner > h2 {
+    position: absolute;
+    top: 45%;
+    left: 82%;
+    font-family: 'GothamMedium';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: end;
+}
+
 .farmaco {
-    padding: 5rem auto;
+    margin: 6rem auto;
+    width: 66%;
+    line-height: 32px;
 }
 
 .farmaco > h2 {
     text-align: center;
     font-family: 'GothamMedium';
+    font-size: 30px;
+    margin-bottom: 4rem;
+    color: #2E2E2E;
+}
+
+.reporte-efectos {
+    margin: 6rem auto 10rem auto;
+    width: 65%;
+}
+
+.reporte-efectos > h2 {
+    text-align: center;
+    font-family: 'GothamMedium';
+    font-size: 30px;
+    margin-bottom: 4rem;
+    color: #2E2E2E;
+}
+
+.reporte-pasos {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reporte-pasos > hr {
+    transform: rotate(90deg);
+    border: 1px solid #019df4;
+}
+
+.paso1 {
+    padding: 30px 35px;
+    border-radius: 50%;
+    background-color: #019df4;
+    color: white;
+    font-size: 26px;
+}
+
+.paso2 {
+    padding: 30px 35px;
+    border-radius: 50%;
+    background-color: #019df4;
+    color: white;
+    font-size: 26px;
+}
+
+.paso3 {
+    padding: 30px 35px;
+    border-radius: 50%;
+    background-color: #019df4;
+    color: white;
+    font-size: 26px;
+}
+
+.paso4 {
+    padding: 30px 35px;
+    border-radius: 50%;
+    background-color: #019df4;
+    color: white;
+    font-size: 26px;
+}
+
+.formulario-reporte {
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5rem;
+    border-radius: 25px;
+}
+
+.formulario-reporte > h3 {
+    text-align: center;
+    font-family: 'GothamMedium';
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form-input > label, .form-flex > div > label {
+    color: #0f97d5;
+    font-family: 'GothamMedium';
+}
+
+.form-input > input {
+    padding: 8px;
+    font-size: 16px;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-flex {
+    display: flex;
+}
+
+.form-flex-inputs {
+    margin-right: 150px;
+}
+
+.radio-inputs {
+    display: flex;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.radio-inputs > span {
+    display: flex;
+}
+
+.form-input > textarea {
+    border: 1px solid #ced4da;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474b4e;
+}
+
+.form-input > textarea::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #6c757d;
+}
+
+.formulario-reporte > button {
+    display: block;
+    margin: 60px auto 0px auto;
+    font-family: 'GothamMedium';
+    padding: 13px 50px;
+    border-radius: 15px;
+    background-color: #0090d2;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.formulario-reporte > button:hover {
+    background-color: #009fe9;
 }

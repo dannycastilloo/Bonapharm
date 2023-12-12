@@ -1,21 +1,43 @@
 /* Banner */
-.nosotros-banner > img {
+.nosotros-banner {
     width: 99.9%;
+    background-image: url('../img/img/b_nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 680px;
+}
+
+.nosotros-banner>h2 {
+    position: absolute;
+    top: 32%;
+    left: 72%;
+    text-align: end;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2E2E2E;
 }
 
 /* Historia */
 .historia {
     display: flex;
-    width: 80%;
+    width: 82%;
     margin: 5rem auto;
+}
+
+.historia-img>img {
+    width: 600px;
+    height: 420px;
+    margin: 10px 0;
 }
 
 .historia-txt {
     width: 100%;
     line-height: 25px;
+    color: #2E2E2E;
 }
 
-.historia-txt > h2 {
+.historia-txt>h2 {
     font-family: 'GothamMedium';
     font-size: 40px;
 }
@@ -27,12 +49,27 @@
     align-items: center;
     margin: 0 auto;
     justify-content: center;
-    gap: 8rem;
+    gap: 60px;
     padding: 3rem 0;
 }
 
 .valores-row-item {
     width: 35%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.valores-row-item > img {
+    width: 70px;
+    height: 70px;
+}
+
+.valor-info > h3 {
+    font-family: 'GothamMedium';
+    font-size: 40px;
+    color: #2E2E2E;
+    margin-bottom: 10px;
 }
 
 /* Equipo */
@@ -40,12 +77,133 @@
     padding: 5rem 0;
 }
 
-.miembro-img > img {
+.miembro-img>img {
     width: 300px;
     height: 300px;
 }
 
-.miembro-card {
+/* Slider */
+.wrapper-team {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-team i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: rgb(57, 183, 210);
+    background: -moz-linear-gradient(180deg, rgba(57, 183, 210, 1) 0%, rgba(37, 154, 209, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(57, 183, 210, 1) 0%, rgba(37, 154, 209, 1) 100%);
+    background: linear-gradient(180deg, rgba(57, 183, 210, 1) 0%, rgba(37, 154, 209, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#39b7d2", endColorstr="#259ad1", GradientType=1);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    color: white;
+}
+
+.wrapper-team i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper-team i:first-child {
+    left: -22px;
+}
+
+.wrapper-team i:last-child {
+    right: -22px;
+}
+
+.wrapper-team .carousel-team {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel-team::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-team.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel-team.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel-team.dragging .card-team {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel-team :where(.card-team, .img) {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-team .card-team {
+    scroll-snap-align: start;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+
+.carousel-team .card-team .img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-team .card-team .img img {
+    width: 450px;
+    height: 450px;
+}
+
+.miembro-txt {
+    width: 45%;
+}
+
+.miembro-txt > h4 {
+    font-size: 40px;
+    color: #2E2E2E;
+    font-family: 'GothamMedium';
+    margin-bottom: 0;
+}
+
+.miembro-txt > h5 {
+    font-size: 24px;
+    color: #008FD2;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper-team .carousel-team {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper-team .carousel-team {
+        grid-auto-columns: 100%;
+    }
 }

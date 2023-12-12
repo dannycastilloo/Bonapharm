@@ -1,7 +1,7 @@
-const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
+const wrapper = document.querySelector(".wrapper-team");
+const carousel = document.querySelector(".carousel-team");
+const firstCardWidth = carousel.querySelector(".card-team").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper-team i");
 const carouselChildrens = [...carousel.children];
 
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
